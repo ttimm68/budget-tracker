@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
-import Button from './components/Button';
+import AddTransaction from './components/AddTransaction';
+
 
 const App = () => {
   return <div className='App'>
