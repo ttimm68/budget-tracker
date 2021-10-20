@@ -1,18 +1,23 @@
-import Button from "./Button.js";
+import Button from './Button.js';
 
 const Header = ({ title, onAdd }) => {
+
+  const onClick = () => {
+    console.log('button was clicked!')
+  }
+
   return (
     <header className='App-header'>
       <h1>{title}</h1>
       <Button
-        bgColor = "lightgreen"
-        text = "Add Money"
-        onClick = {onAdd}
+        bgColor = 'lightgreen'
+        text = 'Add Money'
+        onClick = {onClick}
       />
       <Button
-        bgColor = "indianred"
+        bgColor = 'indianred'
         text = "Remove Money"
-        onClick = {onAdd}
+        onClick = {onClick}
       />
     </header>
   );
