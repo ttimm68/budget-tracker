@@ -1,4 +1,4 @@
-const AddTransaction = ({ onAdd }) => {
+const AddTransaction = () => {
 
   return (
     <form>

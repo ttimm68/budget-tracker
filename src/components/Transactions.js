@@ -1,13 +1,14 @@
-import Task from './Task'
+import Transaction from './Transaction'
 
 const Transactions = ({ transactions }) => {
     return (
         <>
             {transactions.map((transaction) => (
-                <Task key={transaction.id}> transaction={transaction} />
+                <Transaction key={transaction.id}> transaction={transaction}
+                </Transaction>
             ))}
-                </>
-            )
+        </>
+    )
 }
 
-            export default Transactions
+export default Transactions;

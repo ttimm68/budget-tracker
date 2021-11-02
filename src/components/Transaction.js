@@ -8,7 +8,7 @@ const Transaction = ({ transaction }) => {
             {transaction.category}
         </p>
     </div>
-  );
-};
+  )
+}
 
 export default Transaction;

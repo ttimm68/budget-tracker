@@ -1,6 +1,6 @@
 import Button from './Button.js';
 
-const Header = ({ title, onAdd }) => {
+const Header = ({ title }) => {
 
   const onClick = () => {
     console.log('button was clicked!')
