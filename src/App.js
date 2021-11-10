@@ -7,12 +7,12 @@ const App = () => {
   const [transactions, setTransactions] = useState([
     {
       id: 1,
-      text: 'deposit',
+      text: "deposit",
       category: "paycheck",
     },
     {
-      id: 1,
-      text: 'withdrawal',
+      id: 2,
+      text: "withdrawal",
       category: "gas",
     }
   ]);
