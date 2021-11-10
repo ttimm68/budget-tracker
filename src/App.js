@@ -14,6 +14,11 @@ const App = () => {
       id: 2,
       text: "withdrawal",
       category: "gas",
+    },
+    {
+      id: 3,
+      text: "withdrawal",
+      category: "hot dogs",
     }
   ]);
 
