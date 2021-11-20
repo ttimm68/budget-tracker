@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import AddTransaction from "./components/AddTransaction";
 import Transactions from "./components/Transactions";
 
 const App = () => {
@@ -22,11 +21,16 @@ const App = () => {
     }
   ]);
 
+  const deleteTransaction = (id) => {
+    console.log('delete', id)
+    setTransactions(transactions.filter((transaction) => transactions.id !== id ))
+  }
+
   return (
     <div className="App">
       <header>
         <Header title="Budget Tracker" />
-        <Transactions transactions={transactions} />
+        <Transactions transactions={transactions} onDelete={deleteTransaction} />
       </header>
     </div>
   );

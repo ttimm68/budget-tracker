@@ -1,10 +1,10 @@
 import Transaction from "./Transaction";
 
-const Transactions = ({ transactions }) => {
+const Transactions = ({ transactions, onDelete }) => {
   return (
     <>
       {transactions.map((transaction, id) => (
-        <Transaction key={id} transaction={transaction} />
+        <Transaction key={id} transaction={transaction} onDelete={onDelete} />
       ))}
     </>
   );
